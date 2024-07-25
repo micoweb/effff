@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicoEbook</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/samsung-sans-4" rel="stylesheet">
+    <link rel="icon" type="images/png" href="microWorld.png">
+
+    <style>
+        *{
+            font-family: 'Samsung Sans', sans-serif;
+            font-weight: bold;
+            transition: .75s;
+        }
+
+        #title {
+            background-image: linear-gradient(-225deg,
+                    #000000 0%,
+                    #138dff 29%,
+                    #fbff00 67%,
+                    #ff0000 100%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 3s linear;
+            display: inline-block;
+            font-size: 900%;
+            font-family: 'Samsung Sans', sans-serif;
+            user-select: none;
+        }
+
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        #logo {
+            display: inline;
+            width: 180px;
+            margin-bottom: -35px;
+            user-select: none;
+        }
+
+        #languageBar{
+            margin: 20px;
+            background: rgb(206, 206, 206);
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        #english{
+            border: none;
+            background: #a201c2;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        #sinhala{
+            border: none;
+            background: #000000;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        #books {
+            width: 95%;
+            height: 100%;
+            background: gray;
+            padding: 10px;
+            border-radius: 40px;
+            overflow: hidden;
+        }
+
+        #iconSigiriya {
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        #englishPage {
+            width: 98%;
+            height: 100%;
+            background: rgb(255, 255, 255);
+            border-radius: 30px;
+            padding: 10px;
+            margin-bottom: 20px;
+            animation: open 2s;
+            opacity: 100%;
+        }
+
+        @keyframes open{
+            0%{
+                opacity: 0%;
+            }
+        }
+
+        #sinhalaPage {
+            display: none;
+            width: 98%;
+            height: 100%;
+            background: rgb(255, 255, 255);
+            border-radius: 30px;
+            padding: 10px;
+            margin-bottom: 20px;
+            animation: open 3s;
+            position: relative;
+            left: 0px;
+            opacity: 100%;
+        }
+
+        a {
+            font-family: 'Samsung Sans', sans-serif;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 30px;
+            margin: 10px;
+            position: relative;
+            top: -10px;
+        }
+
+        @media (max-width:910px) {
+            #title{
+                font-size: 100px;
+            }
+        }
+
+        @media (max-width:622px) {
+            #title{
+                font-size: 50px;
+            }
+
+            
+        }
+
+        @media (max-width:386px) {
+            #title{
+                font-size: 40px;
+            }
+
+            #logo {
+            display: inline;
+            width: 80px;
+            margin-bottom: -35px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="logodiv">
+            <h1 id="title">MicoEbook <img src="microWorld.png" id="logo"></h1>
+        </div>
+    </center>
+
+    <div id="books">
+        <div id="languageBar">
+            <button id="english">English</button>
+            <button id="sinhala">සිංහල</button>
+        </div>
+        
+        <div id="englishPage">
+            <div id="sigriya">
+                <a href="MicoEbook-Sigiriya/">About The Sigriya</a>
+                <img src="MicoEbook-Sigiriya/icon.png" id="iconSigiriya">
+            </div>
+
+            
+            <hr>
+            <br>
+            <div id="carig">
+                <a href="MicoEbook-Carig/">Carig Fedrighi</a>
+            </div>
+        </div>
+
+        <div id="sinhalaPage">
+            <div id="sigriya">
+                <a href="MicoEbook-Sigiriya/index(lang2).html">සීගිරිය</a>
+                <img src="MicoEbook-Sigiriya/icon.png" id="iconSigiriya">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#english').click(function() {
+            $('#english').css('background', '#a201c2')
+            $('#sinhala').css('background', '#000000')
+
+            $('#englishPage').fadeIn()
+            $('#sinhalaPage').fadeOut()
+        })
+
+        $('#sinhala').click(function() {
+            $('#sinhala').css('background', '#c2010b')
+            $('#english').css('background', '#000000')
+
+            $('#englishPage').fadeOut()
+            $('#sinhalaPage').fadeIn()
+        })
+    </script>
+</body>
+
+</html>
