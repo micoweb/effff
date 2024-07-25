@@ -1,0 +1,549 @@
+/* forAll */
+* {
+    font-family: 'Samsung Sans', sans-serif;
+    transition: .9s;
+
+}
+
+img {
+    width: 40%;
+    border-radius: 30px;
+}
+
+hr {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 2px solid gray;
+    width: 100%;
+    border-radius: 100px;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* /forAll/ */
+
+body {
+    background: url('pictures/pic1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #d6d6d6;
+    animation: fade 2s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+}
+
+/* SECTION1 */
+#welcome {
+    width: 100%;
+    height: 700px;
+    margin: 0;
+    padding: 0;
+    background: #7a7a7a7c;
+    border-radius: 30px;
+    user-select: none;
+}
+
+#translate {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    user-select: none;
+}
+
+#translate>a {
+    font-size: 25px;
+    color: #a5d3ff;
+}
+
+#translate>a:hover {
+    color: #ff0000;
+}
+
+#time,
+#timeS {
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    animation: popup 3s;
+}
+
+@keyframes popup {
+    0% {
+        font-size: 0%;
+    }
+}
+
+#title {
+    font-size: 40px;
+    user-select: none;
+}
+
+/* /SECTION1/ */
+
+/* SECTION2 */
+
+#pic2,
+#pic3,
+#pic4 {
+    display: block;
+    z-index: 10;
+}
+
+#pic3 {
+    margin-top: -15%;
+}
+
+#pic4 {
+    margin-top: -10%;
+}
+
+#contents {
+    background: rgb(202, 202, 202);
+    width: 50%;
+    height: 100%;
+    border-radius: 40px;
+    z-index: 10;
+    float: right;
+    position: relative;
+    margin-top: -670px;
+    padding-bottom: 50px;
+    margin-bottom: 10%;
+    margin-right: 20px;
+}
+
+#contentHeader {
+    color: black;
+    font-size: 40px;
+    padding: 55px 0px 0px 25px;
+}
+
+#li {
+    margin: 20px;
+    border-bottom: 2px solid gray;
+    width: 50%;
+    font-size: 25px;
+}
+
+#subLi {
+    margin: 20px;
+    border-bottom: 2px solid gray;
+    width: 50%;
+}
+
+#li>a {
+    text-decoration: none;
+    color: #260031;
+}
+
+#subLi>a {
+    text-decoration: none;
+    color: #430155;
+}
+
+/* /SECTION2/ */
+
+/* SECTION3 */
+#firstTextTile {
+    background: #cacaca;
+    width: 50%;
+    height: 100%;
+    border-radius: 40px;
+    z-index: 15;
+    float: left;
+    position: relative;
+    font-size: 20px;
+    padding: 30px;
+    margin-bottom: 10%;
+    margin-right: 20px;
+}
+
+#pic6 {
+    margin-top: -13%;
+}
+
+/* SECTION3 */
+
+/* SECTION4 */
+#secondTextTile {
+    width: 94%;
+    margin: 1%;
+    background: #cacaca;
+    padding: 25px;
+    padding-top: 10px;
+    border-radius: 40px;
+}
+
+/* /SECTION4/ */
+
+/* SECTION5 */
+#thirdTextTile {
+    width: 50%;
+    margin: 1%;
+    margin-top: -40%;
+    background: #cacaca;
+    padding: 25px;
+    padding-top: 10px;
+    border-radius: 40px;
+    float: right;
+}
+
+#pic8 {
+    margin-top: -20%;
+    margin-left: 2%;
+    display: block;
+}
+
+#pic9 {
+    margin-top: -23%;
+    margin-left: 5%;
+    display: block;
+}
+
+/* /SECTION5/ */
+
+
+/* SECTION6 */
+#pic10,
+#pic11,
+#pic12,
+#pic13,
+#pic14 {
+    margin: 1%;
+    width: 30%;
+}
+
+#fourthTextTile {
+    width: 94%;
+    margin: 1%;
+    background: #cacaca;
+    padding: 25px;
+    padding-top: 10px;
+    border-radius: 40px;
+}
+
+i {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+}
+
+/* /SECTION6/ */
+
+/* SECTION7 */
+#pic15,
+#pic16,
+#pic17 {
+    margin-left: 1%;
+    width: 30%;
+    display: block;
+    border-radius: 0%;
+}
+
+#fifthTextTile {
+    width: 50%;
+    margin: 2%;
+    margin-top: -86%;
+    background: #cacaca;
+    padding: 25px;
+    padding-top: 10px;
+    border-radius: 40px;
+    float: right;
+}
+
+#pic15,
+#pic18 {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+#pic17,
+#pic23 {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+/* /SECTION7/ */
+
+/* SECTION8 */
+#sixthTextTile {
+    width: 50%;
+    margin: 2%;
+    margin-top: -125%;
+    background: #cacaca;
+    padding: 25px;
+    padding-top: 10px;
+    border-radius: 40px;
+    float: right;
+}
+
+#pic18,
+#pic19,
+#pic20,
+#pic21,
+#pic22,
+#pic23 {
+    margin-left: 1%;
+    width: 30%;
+    display: block;
+    border-radius: 0%;
+}
+
+#pic18 {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+#pic23 {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+/* /SECTION8/ */
+
+
+/* SECTION9 */
+#hL1Labe1,
+#hL1Labe2 {
+    display: inline;
+    background: gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+    user-select: none;
+}
+
+#hotelLists {
+    width: 90%;
+    margin: 30px;
+}
+
+#hotelList1,
+#hotelList2 {
+    width: 100%;
+    background: #cacaca;
+    border-radius: 20px;
+    padding: 20px;
+    display: block;
+    margin-top: 50px;
+}
+
+#hotelList2 {
+    display: none;
+}
+
+#hLTH,
+#hLTD,
+#hLTDR {
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 2px;
+    font-weight: bold;
+    width: 50%;
+}
+
+#hLTDR {
+    color: rgb(168, 111, 4);
+    font-weight: bold;
+    width: 100%;
+}
+
+#hL1TD>a {
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* /SECTION9/ */
+
+/* SECTION10 */
+#boxL {
+    width: 50%;
+    background: #cacaca;
+    padding: 25px;
+    padding-top: 10px;
+    border-radius: 40px;
+    padding-bottom: 100px;
+}
+
+#header6 {
+    float: left;
+    font-size: 40px;
+}
+
+#boxL>center>p {
+    font-size: 30px;
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+#boxL>center>a {
+    font-size: 25px;
+    margin-top: 130px;
+    background: rgb(224, 52, 52);
+    padding: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#boxL>center>a:hover {
+    background: rgb(224, 52, 109);
+    box-shadow: 0 0 10px rgb(78, 78, 78);
+}
+
+/* /SECTION10/ */
+
+/* RESPONSIVE-DESIGN */
+@media (max-width: 953px) {
+    body {
+        background: url(pictures/pic1-2.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #d6d6d6;
+    }
+
+    #welcome {
+        background: #636363be;
+    }
+
+    #contents {
+        width: 96%;
+        z-index: 10;
+        position: static;
+        margin-top: 40px;
+    }
+
+    #pic2,
+    #pic3,
+    #pic4 {
+        width: 96%;
+        z-index: 15;
+    }
+
+    #firstTextTile {
+        width: 92%;
+        position: static;
+        margin-top: 40px;
+    }
+
+    #pic5,
+    #pic6 {
+        width: 96%;
+        z-index: 15;
+    }
+
+    #thirdTextTile {
+        width: 92%;
+        position: static;
+        margin-top: 40px;
+    }
+
+    #pic7,
+    #pic8,
+    #pic9 {
+        width: 93%;
+        z-index: 15;
+    }
+}
+
+/* /RESPONSIVE-DESIGN/ */
+@media (max-width: 869px) {
+
+    #translate {
+        font-size: 17px;
+    }
+
+    #translate>a {
+        font-size: 20px;
+    }
+
+    #time {
+        font-size: 60px;
+    }
+
+    #title {
+        font-size: 30px;
+    }
+
+    #firstTextTile,
+    #secondTextTile,
+    #thirdTextTile,
+    #fourthTextTile,
+    #fifthTextTile,
+    #sixthTextTile {
+        width: 90%;
+        position: static;
+        margin-top: 40px;
+    }
+
+    #pic2,
+    #pic3,
+    #pic4,
+    #pic5,
+    #pic6,
+    #pic7,
+    #pic8,
+    #pic9,
+    #pic10,
+    #pic11,
+    #pic12,
+    #pic13,
+    #pic14,
+    #pic15,
+    #pic16,
+    #pic17,
+    #pic18,
+    #pic19,
+    #pic20,
+    #pic21,
+    #pic22,
+    #pic23 {
+        width: 94%;
+        z-index: 15;
+    }
+}
+
+@media (max-width: 869px) {
+
+    #firstTextTile,
+    #secondTextTile,
+    #thirdTextTile,
+    #fourthTextTile,
+    #fifthTextTile,
+    #sixthTextTile {
+        width: 87%;
+        position: static;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        background: url(pictures/pic1-3.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #d6d6d6;
+    }
+
+    #welcome {
+        font-size: 40px;
+    }
+
+    #boxL{
+        width: 87%;
+    }
+
+    #boxL>center>a {
+        font-size: 25px;
+        
+        border-radius: 20px;
+    }
+}

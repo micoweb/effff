@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#title{
+    font-family: "Raleway", sans-serif;
+    margin: 60px 50px 0px 100px;
+
+}
+#title2{
+    font-family: "Raleway", sans-serif;
+    margin: 10px 50px 50px 110px;
+    font-weight: 300;
+
+}
+
+img{
+    margin:  0; 
+    width: 90%; 
+    margin-bottom: 50px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+}
+
+#textDiv1{
+    width: 45%;
+    display: inline-block;
+}
+#textDiv2{
+    width: 45%;
+    display: inline-block;
+    position: relative;
+    top: -40px;
+    left: 20px;
+}
+
+#allTextDiv{
+    margin: 50px 50px 50px 100px ;
+}
+.img{
+    margin-bottom: 300px;
+}
+
+#imgDiv{
+    width: 100%;
+}
+
+footer{
+    background: rgb(226, 226, 226);
+    margin-bottom: -25px;
+}
+
+#lineBreaker{
+    width: 90%;
+}
+
+#cc{
+    font-family: "Raleway", sans-serif;
+    padding: 20px 0 40px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+#iconMico{
+    width: 50px;
+    margin: 0px 30px 0px 30px;
+    float: right;
+    position: relative;
+     top: -15px;
+}
+
+.footerA{
+    font-family: "Raleway", sans-serif;
+    margin: 0px 30px 0px 30px;
+    color: black;
+    text-decoration: none;
+}
+
+#footerlinksDiv{
+    margin: 50px 30px 50px 30px;
+}
+
+@media (max-width:654px) {
+
+    #allTextDiv{
+        margin: 20px ;
+    }
+    #textDiv1{
+        width: 100%;
+        display: block;
+    }
+    #textDiv2{
+        width: 100%;
+        display: block;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    img{
+        margin:  0; 
+        width: 100%; 
+        border-radius: 0px;
+        align-items: center;
+
+    }
+}
